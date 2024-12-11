@@ -15,7 +15,6 @@ public class Main {
         } catch (Exception error){
             System.out.print("Error");
             str = " ";
-            str = " ";
         }
         return str;
     }
