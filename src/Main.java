@@ -1,8 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.net.URLEncoder;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-        System.out.print("Test");
+        Scanner cin = new Scanner(System.in);
+        String input = cin.nextLine();
+        input = encoder(input);
+        System.out.print(input);
+    }
+
+    static  String encoder(String str){
+        try{
+            str = URLEncoder.encode(str, "UTF-8");
+        } catch (Exception error){
+            System.out.print("Error");
+            str = " ";
+        }
+        return str;
     }
 }
