@@ -29,6 +29,5 @@ public class Main {
         adress = encoder(adress);
         InputStream input;
         FileOutputStream output;
-
     }
 }
